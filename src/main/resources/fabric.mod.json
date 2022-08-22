@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tuff_brick",
+  "version": "${version}",
+  "name": "Tuff_brick",
+  "description": "take a WIIIIIIIIIIIIIIIIIIIIIILD fucking guess",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/tuff_brick/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tuffbrick.tuff_brick.client.Tuff_brickClient"
+    ],
+    "main": [
+      "tuffbrick.tuff_brick.Tuff_brick"
+    ]
+  },
+  "mixins": [
+    "tuff_brick.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
