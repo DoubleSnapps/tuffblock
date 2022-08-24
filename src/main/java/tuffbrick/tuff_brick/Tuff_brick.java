@@ -12,26 +12,13 @@ import net.minecraft.util.registry.Registry;
 
 public class Tuff_brick implements ModInitializer {
 public static final Block TUFF_BRICK = new Block(FabricBlockSettings.of(Material.STONE).strength(7.0f));
-    @Override
+//public static BlockItem TUFF_BRICK = new BlockItem()
+
+@Override
     public void onInitialize() {
         Registry.register(Registry.BLOCK, new Identifier("tuffbricks", "tuff_brick"), TUFF_BRICK);
-        Registry.register(Registry.ITEM, new Identifier("tuffbricks", "tuff_brick"),
+        BlockItem register = Registry.register(Registry.ITEM, new Identifier("tuffbricks", "tuff_brick"),
                 new BlockItem(TUFF_BRICK, new FabricItemSettings().group(ItemGroup.MISC)));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

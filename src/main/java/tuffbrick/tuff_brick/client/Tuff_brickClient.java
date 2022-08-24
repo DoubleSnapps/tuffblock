@@ -14,14 +14,5 @@ public class Tuff_brickClient implements ClientModInitializer {
 
 
 
-
-
-
-
-
-
-
-
-
     }
 }
